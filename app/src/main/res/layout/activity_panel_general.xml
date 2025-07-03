@@ -3,17 +3,105 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="#F5F7FA">
 
+    <!-- Título -->
     <TextView
-        android:id="@+id/tvBienvenida"
-        android:layout_width="wrap_content"
+        android:id="@+id/welcomeText"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Bienvenido al Panel General"
-        android:textSize="24sp"
+        android:text="Bienvenido, Padre"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#333"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Botón Tareas -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tasksButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Tareas"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toBottomOf="@id/welcomeText"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="100dp"/>
+        android:layout_marginTop="32dp" />
+
+    <!-- Botón Calificaciones -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/gradesButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver Calificaciones"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toBottomOf="@id/tasksButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botón Eventos -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/eventsButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Eventos Escolares"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toBottomOf="@id/gradesButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botón Panel General -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/dashboardButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Panel General"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toBottomOf="@id/eventsButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botón Perfil -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/profileButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Perfil"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#1976D2"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toBottomOf="@id/dashboardButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botón Cerrar Sesión -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/logoutButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cerrar Sesión"
+        app:cornerRadius="12dp"
+        android:backgroundTint="#D32F2F"
+        android:textColor="#FFF"
+        app:layout_constraintTop_toBottomOf="@id/profileButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

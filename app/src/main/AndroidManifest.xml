@@ -13,6 +13,21 @@
         android:theme="@style/Theme.EduParents"
         tools:targetApi="31">
         <activity
+            android:name=".CalificacionesAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".TareasAdapter"
+            android:exported="false" />
+        <activity
+            android:name=".TareasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CalificacionesActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
