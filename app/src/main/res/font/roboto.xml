@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<font-family xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Regular -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="400"
+        />
+
+    <!-- Italic -->
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="400"
+        />
+
+    <!-- Medium -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="500"
+       />
+
+    <!-- Medium Italic (opcional, si tienes el archivo) -->
+    <font
+        android:fontStyle="italic"
+        android:fontWeight="500"
+         />
+
+    <!-- Bold -->
+    <font
+        android:fontStyle="normal"
+        android:fontWeight="700"
+        />
+</font-family>

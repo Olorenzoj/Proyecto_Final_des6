@@ -1,8 +1,9 @@
-package com.example.eduparents
+package com.example.eduparents.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.eduparents.DBHelper
 import com.example.eduparents.databinding.ActivityCalificacionesBinding
 
 class CalificacionesActivity : AppCompatActivity() {

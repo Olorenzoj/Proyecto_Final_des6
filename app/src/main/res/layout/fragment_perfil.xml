@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white">
+    android:background="?attr/colorSurface">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,26 +16,29 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="#1976D2"
-            android:layout_marginBottom="20dp">
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?attr/colorPrimaryContainer"
+            android:layout_marginBottom="24dp"
+            app:strokeColor="?attr/colorOutline"
+            app:strokeWidth="0dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                android:padding="16dp"
+                android:padding="20dp"
                 android:gravity="center_vertical">
 
                 <com.google.android.material.imageview.ShapeableImageView
                     android:id="@+id/profileImageView"
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
                     android:src="@drawable/ic_account_circle"
                     android:scaleType="centerCrop"
                     app:shapeAppearanceOverlay="@style/CircleImageView"
-                    android:layout_marginEnd="16dp" />
+                    android:layout_marginEnd="16dp"
+                    app:tint="?attr/colorOnPrimaryContainer" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -48,27 +51,28 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/portal_de_padres"
-                        android:textSize="18sp"
+                        android:textSize="20sp"
                         android:textStyle="bold"
-                        android:textColor="@android:color/white" />
+                        android:textColor="?attr/colorOnPrimaryContainer"
+                        />
 
                     <TextView
                         android:id="@+id/statusTextView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/gestiona_la_informaci_n_de_tus_hijos"
-                        android:textSize="12sp"
-                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:textColor="?attr/colorOnPrimaryContainer"
                         android:alpha="0.8"
-                        android:layout_marginTop="2dp" />
+                        android:layout_marginTop="4dp" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
                     android:src="@drawable/ic_school"
-                    app:tint="@android:color/white"
+                    app:tint="?attr/colorOnPrimaryContainer"
                     android:alpha="0.7" />
 
             </LinearLayout>
@@ -82,18 +86,21 @@
             android:text="@string/informaci_n_del_padre_tutor"
             android:textSize="16sp"
             android:textStyle="bold"
-            android:textColor="#333"
-            android:layout_marginBottom="12dp"
-            android:layout_marginStart="4dp" />
+            android:textColor="?attr/colorOnSurface"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="4dp"
+            />
 
         <!-- Card de Nombre -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="@android:color/white"
-            android:layout_marginBottom="12dp">
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?attr/colorSurfaceContainer"
+            android:layout_marginBottom="12dp"
+            app:strokeColor="?attr/colorOutlineVariant"
+            app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -105,9 +112,9 @@
                 <ImageView
                     android:layout_width="24dp"
                     android:layout_height="24dp"
-                    android:src="@drawable/ic_person"
+                    android:src="@drawable/ic_person_24"
                     android:layout_marginEnd="16dp"
-                    app:tint="#1976D2" />
+                    app:tint="?attr/colorPrimary" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -120,8 +127,9 @@
                         android:layout_height="wrap_content"
                         android:text="@string/nombre_completo"
                         android:textSize="12sp"
-                        android:textColor="#666"
-                        android:textStyle="bold" />
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textStyle="bold"
+                        />
 
                     <TextView
                         android:id="@+id/nombreValueTextView"
@@ -129,18 +137,12 @@
                         android:layout_height="wrap_content"
                         android:text=""
                         android:textSize="16sp"
-                        android:textColor="#333"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginTop="4dp" />
 
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_edit"
-                    android:clickable="true"
-                    android:focusable="true"
-                    app:tint="#999" />
+
 
             </LinearLayout>
 
@@ -150,10 +152,12 @@
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="@android:color/white"
-            android:layout_marginBottom="12dp">
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?attr/colorSurfaceContainer"
+            android:layout_marginBottom="12dp"
+            app:strokeColor="?attr/colorOutlineVariant"
+            app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -166,7 +170,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_email"
-                    app:tint="#1976D2"
+                    app:tint="?attr/colorPrimary"
                     android:layout_marginEnd="16dp" />
 
                 <LinearLayout
@@ -180,8 +184,9 @@
                         android:layout_height="wrap_content"
                         android:text="@string/correo_electr_nico"
                         android:textSize="12sp"
-                        android:textColor="#666"
-                        android:textStyle="bold" />
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textStyle="bold"
+                        />
 
                     <TextView
                         android:id="@+id/correoValueTextView"
@@ -189,31 +194,26 @@
                         android:layout_height="wrap_content"
                         android:text="@string/email_email_com"
                         android:textSize="16sp"
-                        android:textColor="#333"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginTop="4dp" />
 
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_edit"
-                    app:tint="#999"
-                    android:clickable="true"
-                    android:focusable="true" />
 
             </LinearLayout>
 
         </com.google.android.material.card.MaterialCardView>
 
-        <!-- Card de Usuario -->
+        <!-- Card de Teléfono -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:cardCornerRadius="12dp"
-            app:cardElevation="4dp"
-            app:cardBackgroundColor="@android:color/white"
-            android:layout_marginBottom="24dp">
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?attr/colorSurfaceContainer"
+            android:layout_marginBottom="32dp"
+            app:strokeColor="?attr/colorOutlineVariant"
+            app:strokeWidth="1dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -226,7 +226,7 @@
                     android:layout_width="24dp"
                     android:layout_height="24dp"
                     android:src="@drawable/ic_phone"
-                    app:tint="#1976D2"
+                    app:tint="?attr/colorPrimary"
                     android:layout_marginEnd="16dp" />
 
                 <LinearLayout
@@ -240,8 +240,9 @@
                         android:layout_height="wrap_content"
                         android:text="@string/n_mero_de_tel_fono"
                         android:textSize="12sp"
-                        android:textColor="#666"
-                        android:textStyle="bold" />
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:textStyle="bold"
+                        />
 
                     <TextView
                         android:id="@+id/telefonoValueTextView"
@@ -249,18 +250,10 @@
                         android:layout_height="wrap_content"
                         android:text="@string/mock_phone_number"
                         android:textSize="16sp"
-                        android:textColor="#333"
+                        android:textColor="?attr/colorOnSurface"
                         android:layout_marginTop="4dp" />
 
                 </LinearLayout>
-
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:src="@drawable/ic_edit"
-                    app:tint="#999"
-                    android:clickable="true"
-                    android:focusable="true" />
 
             </LinearLayout>
 
@@ -280,11 +273,15 @@
                 android:text="@string/ver_hijos_btn"
                 android:textSize="16sp"
                 android:padding="16dp"
-                app:cornerRadius="12dp"
-                app:backgroundTint="#1976D2"
-                android:layout_marginBottom="8dp"
+                app:cornerRadius="16dp"
+                app:backgroundTint="?attr/colorPrimary"
+                android:textColor="?attr/colorOnPrimary"
+                android:layout_marginBottom="12dp"
                 app:icon="@drawable/ic_people"
-                app:iconGravity="textStart" />
+                app:iconGravity="textStart"
+                app:iconTint="?attr/colorOnPrimary"
+                style="@style/Widget.Material3.Button"
+                />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/notasButton"
@@ -293,14 +290,15 @@
                 android:text="@string/ver_notas_de_mis_hijos"
                 android:textSize="16sp"
                 android:padding="16dp"
-                app:cornerRadius="12dp"
+                app:cornerRadius="16dp"
                 style="@style/Widget.Material3.Button.OutlinedButton"
-                app:strokeColor="#1976D2"
-                android:textColor="#1976D2"
-                app:icon="@drawable/ic_grade"
+                app:strokeColor="?attr/colorOutline"
+                android:textColor="?attr/colorPrimary"
+                app:icon="@drawable/ic_grades_24"
                 app:iconGravity="textStart"
-                app:iconTint="#1976D2"
-                android:layout_marginBottom="12dp" />
+                app:iconTint="?attr/colorPrimary"
+                android:layout_marginBottom="12dp"
+                 />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/editProfileButton"
@@ -309,13 +307,14 @@
                 android:text="@string/editar_mi_perfil"
                 android:textSize="16sp"
                 android:padding="16dp"
-                app:cornerRadius="12dp"
+                app:cornerRadius="16dp"
                 style="@style/Widget.Material3.Button.OutlinedButton"
-                app:strokeColor="#1976D2"
-                android:textColor="#1976D2"
+                app:strokeColor="?attr/colorOutline"
+                android:textColor="?attr/colorPrimary"
                 app:icon="@drawable/ic_edit"
                 app:iconGravity="textStart"
-                app:iconTint="#1976D2" />
+                app:iconTint="?attr/colorPrimary"
+                />
 
         </LinearLayout>
 

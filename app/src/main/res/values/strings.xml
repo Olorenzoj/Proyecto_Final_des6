@@ -17,4 +17,10 @@
     <string name="no_tienes_cuenta_reg_strate">¿No tienes cuenta? Regístrate</string>
     <string name="eduparents">EduParents</string>
     <string name="logo_de_eduparents">Logo de EduParents</string>
+    <string name="menu_home">Inicio</string>
+    <string name="menu_work">Tareas</string>
+    <string name="menu_favorites">Favoritos</string>
+    <string name="menu_profile">Perfil</string>
+    <string name="menu_settings">Configuración</string>
+
 </resources>

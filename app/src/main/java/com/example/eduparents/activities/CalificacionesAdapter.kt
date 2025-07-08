@@ -1,4 +1,4 @@
-package com.example.eduparents
+package com.example.eduparents.activities
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

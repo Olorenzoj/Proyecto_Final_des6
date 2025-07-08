@@ -1,9 +1,10 @@
-package com.example.eduparents
+package com.example.eduparents.activities
 
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.eduparents.DBHelper
 import com.example.eduparents.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -28,7 +29,7 @@ class LoginActivity : AppCompatActivity() {
             } else {
                 val valido = dbHelper.verificarCredenciales(usuario, contrasena)
                 if (valido) {
-                    val intent = Intent(this, PanelGeneralActivity::class.java)
+                    val intent = Intent(this, MainActivity::class.java)
                     intent.putExtra("nombreUsuario", usuario)
                     startActivity(intent)
                     finish()

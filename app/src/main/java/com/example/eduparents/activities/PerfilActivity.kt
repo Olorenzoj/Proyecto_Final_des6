@@ -1,17 +1,18 @@
-package com.example.eduparents
+package com.example.eduparents.activities
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.eduparents.databinding.ActivityPerfilBinding
+import com.example.eduparents.DBHelper
+import com.example.eduparents.databinding.FragmentPerfilBinding
 
 class PerfilActivity : AppCompatActivity() {
 
-    private lateinit var binding: ActivityPerfilBinding
+    private lateinit var binding: FragmentPerfilBinding
     private lateinit var dbHelper: DBHelper
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityPerfilBinding.inflate(layoutInflater)
+        binding = FragmentPerfilBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val usuario = intent.getStringExtra("nombreUsuario") ?: ""
@@ -28,9 +29,8 @@ class PerfilActivity : AppCompatActivity() {
             val correo = cursor.getString(cursor.getColumnIndexOrThrow("correo"))
             val username = cursor.getString(cursor.getColumnIndexOrThrow("usuario"))
 
-            binding.nombreTextView.text = nombre
-            binding.correoTextView.text = correo
-            binding.usuarioTextView.text = username
+            binding.nombreValueTextView.text = nombre
+            binding.correoValueTextView.text = correo
         }
 
         cursor.close()

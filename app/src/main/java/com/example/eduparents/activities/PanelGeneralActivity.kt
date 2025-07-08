@@ -1,4 +1,4 @@
-package com.example.eduparents
+package com.example.eduparents.activities
 
 import android.content.Intent
 import android.os.Bundle
