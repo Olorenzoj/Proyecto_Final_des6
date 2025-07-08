@@ -1,9 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">EduParents</string>
-    <string name="ver_hijos_btn">Ver Mis Hijos</string>
     <string name="ver_notas_de_mis_hijos">Ver Notas de Mis Hijos</string>
     <string name="editar_mi_perfil">Editar Mi Perfil</string>
-    <string name="informaci_n_del_padre_tutor">Información del Padre/Tutor</string>
     <string name="nombre_completo">Nombre completo</string>
     <string name="correo_electr_nico">Correo electrónico</string>
     <string name="email_email_com">email@email.com</string>
@@ -11,7 +9,6 @@
     <string name="n_mero_de_tel_fono">Número de teléfono</string>
     <string name="mock_phone_number">+### ####-####</string>
     <string name="portal_de_padres">Portal de Padres</string>
-    <string name="usuario">Usuario</string>
     <string name="contrase_a">Contraseña</string>
     <string name="iniciar_sesi_n">Iniciar Sesión</string>
     <string name="no_tienes_cuenta_reg_strate">¿No tienes cuenta? Regístrate</string>
