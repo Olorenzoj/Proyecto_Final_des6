@@ -18,7 +18,7 @@ class HomeFragment : Fragment(R.layout.activity_panel_general) {
         _binding = ActivityPanelGeneralBinding.bind(view)
 
         // Recibir argumentos (nombre de usuario)
-        val nombreUsuario = arguments?.getString("nombreUsuario") ?: "Padre"
+        val nombreUsuario = arguments?.getString("nombreUsuario") ?: "padre"
         binding.welcomeText.text = "Bienvenido, $nombreUsuario"
 
         setupClickListeners(nombreUsuario)
@@ -35,18 +35,21 @@ class HomeFragment : Fragment(R.layout.activity_panel_general) {
 
         // Botón: Ver Calificaciones
         binding.gradesButton.setOnClickListener {
-            // Navegar a fragment de calificaciones (crearlo primero)
-            Toast.makeText(requireContext(), "Calificaciones próximamente", Toast.LENGTH_SHORT).show()
+            val bundle = Bundle().apply {
+                putString("nombreUsuario", nombreUsuario)
+            }
+            findNavController().navigate(R.id.gradeFragment, bundle)
         }
 
         // Botón: Ver Eventos
         binding.eventsButton.setOnClickListener {
-            Toast.makeText(requireContext(), "Eventos escolares próximamente", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.scholarsEventsFragment)
         }
 
         // Botón: Panel General (Dashboard)
         binding.dashboardButton.setOnClickListener {
             Toast.makeText(requireContext(), "Se confecciona un Dashboard resumen", Toast.LENGTH_SHORT).show()
+            findNavController().navigate(R.id.dashboardFragment)
         }
 
         // Botón: Perfil

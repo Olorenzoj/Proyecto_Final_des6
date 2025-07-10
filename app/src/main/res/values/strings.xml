@@ -22,5 +22,10 @@
     <string name="menu_favorites">Favoritos</string>
     <string name="menu_profile">Perfil</string>
     <string name="menu_settings">Configuración</string>
+    <string name="tareas_asignadas">Tareas Asignadas</string>
+    <string name="gestiona_las_tareas_de_tus_hijos">Gestiona las tareas de tus hijos</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

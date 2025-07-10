@@ -31,4 +31,24 @@
         android:name="com.example.eduparents.fragments.TasksFragment"
         android:label="Tareas"
         tools:layout="@layout/activity_tareas" />
+
+    <fragment
+        android:id="@+id/gradeFragment"
+        android:name="com.example.eduparents.fragments.GradeFragment"
+        android:label="Calificaciones"
+        tools:layout="@layout/fragment_grade" />
+
+    <fragment
+        android:id="@+id/scholarsEventsFragment"
+        android:name="com.example.eduparents.fragments.ScholarsEventsFragment"
+        android:label="Eventos"
+        tools:layout="@layout/fragment_scholars_events" />
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.example.eduparents.fragments.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+
 </navigation>
